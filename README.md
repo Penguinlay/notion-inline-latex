@@ -14,7 +14,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ## Attention (Please read this before proceeding.)
 - Script is intended only for web browswer use with UserScript extension, [Violentmonkey](https://violentmonkey.github.io/).
-- - The script should work with other UserScript extentions as it is or minimum changes though it *has not* been tested yet.
+- - The script should work with other UserScript extentions as it is or with minimum changes though it *has not* been tested yet.
 - Script does not change the content.
 - - It merely changes the display after the contents are loaded.
 - Need at least one math block present on the page for the script to work properly.
