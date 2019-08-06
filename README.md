@@ -10,7 +10,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ## Acknowledgement
 - Special thanks go to [Evert Heylen](https://github.com/evertheylen)!
-- - This project is influenced and motivated by her initial project, [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math).
+- - This project is influenced and motivated by his initial project, [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math).
 
 ## Attention (Please read this before proceeding.)
 - Script is intended only for web browswer use with UserScript extension, [Violentmonkey](https://violentmonkey.github.io/).
