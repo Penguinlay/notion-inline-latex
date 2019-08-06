@@ -35,7 +35,7 @@ function renderInlineLaTeX() {
             { left: "$"  , right: "$"  , display: false }
         ]
     });
-    console.log("Inline LaTeX rendered.");
+    console.log("Inline LaTeX is rendered.");
 }
 
 // on startup...
