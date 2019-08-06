@@ -1,5 +1,5 @@
 # notion-inline-latex
-User Script for Inline LaTeX Rendering in [notion.so](notion.so)
+UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ---
 
@@ -13,6 +13,8 @@ User Script for Inline LaTeX Rendering in [notion.so](notion.so)
 - - This project is influenced and motivated by her initial project, [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math).
 
 ## Attention (Please read this before proceeding.)
+- Script is intended only for web browswer use with UserScript extension, [Violentmonkey](https://violentmonkey.github.io/).
+- - The script should work with other UserScript extentions as it is or minimum changes though it *has not* been tested yet.
 - Script does not change the content.
 - - It merely changes the display after the contents are loaded.
 - Need at least one math block present on the page for the script to work properly.
@@ -26,7 +28,6 @@ User Script for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ## Installation
 - Install [Violentmonkey](https://violentmonkey.github.io/).
-- - The script should work with other UserScript extentions as it is though it *has not* been tested yet.
 - Click on the extension icon and click plus icon. A new text editor window by extension will be opened in new tab.
 - Copy/paste the script `notion-inline-latex.js`.
 - Save and close the editor.
