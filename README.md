@@ -24,7 +24,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - I cannot take responsibility for loss of data or other harms.
 - - So, even though the script only changes the display and it is harmless at my best knowledge, please use it at your own risk.
 - Last but not least, this project/script is in no way affiliated nor sponsored by [notion.so](notion.so).
-- - Like features on [Notion Community](https://www.notion.so/Notion-Community-04f306fbf59a413fae15f42e2a1ab029), this is a personal/community hack/workaround.
+- - Like features on [Notion Hacks](https://www.notion.so/Notion-Hacks-27b92f71afcd4ae2ac9a4d14fef0ce47), this is a personal/community hack/workaround.
 
 ## Installation
 - Install [Violentmonkey](https://violentmonkey.github.io/).
@@ -56,9 +56,10 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - Please submit PR if you have any update to the project or would like to contribute. Thanks in advanced!
 
 ## Reference
-- [notion.so](notion.so)
-- [Notion Official](https://www.notion.so/Notion-Official-83715d7703ee4b8699b5e659a4712dd8)
+- [Official notion.so](notion.so)
+- [Official Notion Documentation](https://www.notion.so/Notion-Official-83715d7703ee4b8699b5e659a4712dd8)
 - [Notion Community](https://www.notion.so/Notion-Community-04f306fbf59a413fae15f42e2a1ab029)
+- [Notion Hacks](https://www.notion.so/Notion-Hacks-27b92f71afcd4ae2ac9a4d14fef0ce47)
 - [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math)
 - [Violentmonkey Metadata Block](https://violentmonkey.github.io/api/metadata-block/)
 - [StackOverFlow Answer to "Run javascript function when user finishes typing instead of on key up?"](https://stackoverflow.com/a/4220182)
