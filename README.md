@@ -1,2 +1,64 @@
 # notion-inline-latex
-User Script for Inline LaTeX Rendering in notion.so
+User Script for Inline LaTeX Rendering in [notion.so](notion.so)
+
+---
+
+## Feature
+- Load at Startup (default two seconds latency for smoother experience but customizable)
+- Load at Keyup (default two seconds latency for smoother experience but customizable)
+- `$ $` as Default LaTeX Delimiter (customizable)
+
+## Acknowledgement
+- Special thanks go to [Evert Heylen](https://github.com/evertheylen)!
+- - This project is influenced and motivated by her initial project, [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math).
+
+## Attention (Please read this before proceeding.)
+- Script does not change the content.
+- - It merely changes the display after the contents are loaded.
+- Need at least one math block present on the page for the script to work properly.
+- This script is based on the script by Evert Heylen for my own math notes on [notion.so](notion.so).
+- - I make it available for public so that it would be useful to others.
+- - I meant no harm in writing this personal script.
+- - I cannot take responsibility for loss of data or other harms.
+- - So, even though the script only changes the display and it is harmless at my best knowledge, please use it at your own risk.
+- Last but not least, this project/script is in no way affiliated nor sponsored by [notion.so](notion.so).
+- - Like features on [Notion Community](https://www.notion.so/Notion-Community-04f306fbf59a413fae15f42e2a1ab029), this is a personal/community hack/workaround.
+
+## Installation
+- Install [Violentmonkey](https://violentmonkey.github.io/).
+- - The script should work with other UserScript extentions as it is though it *has not* been tested yet.
+- Click on the extension icon and click plus icon. A new text editor window by extension will be opened in new tab.
+- Copy/paste the script `notion-inline-latex.js`.
+- Save and close the editor.
+- Go to [notion.so](notion.so) and enable the script if it has not been already.
+
+## Usage
+- It should work on any [notion.so](notion.so) page automatically through extension as long as 
+- - the script is enabled in extension, and 
+- - there exists at least one math block in the page.
+- If you have any usage question, you can ask me on either:
+- - [Unofficial NotionHacks Discord](https://discordapp.com/invite/2RrqtF9), or
+- - [Unofficial NotionHacks Slack](notionhacks.slack.com).
+
+## Known Limitations
+- The page needs at least one math block for the script to work properly.
+
+## To-Do-List
+- [ ] Figure out a way to eliminate the need for the presence of math block for the script to work.
+
+## Customization
+- Small value for startUpWaitTime and keyUpWaitTime can make the script load improperly.
+- Add delimiters as desired though delimiters other than default one have not been tested yet.
+
+## Contribution
+- Please start an issue if you find a bug or have any question.
+- Please submit PR if you have any update to the project or would like to contribute. Thanks in advanced!
+
+## Reference
+- [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math)
+- [Violentmonkey Metadata Block](https://violentmonkey.github.io/api/metadata-block/)
+- [StackOverFlow Answer to "Run javascript function when user finishes typing instead of on key up?"](https://stackoverflow.com/a/4220182)
+- [StackOverFlow Answer to "How can I render all inline formulas in $..$ with KaTeX?"](https://stackoverflow.com/a/45301641)
+- [KaTeX Auto-render Extension](https://katex.org/docs/autorender.html)
+
+---
