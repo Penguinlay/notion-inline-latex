@@ -12,7 +12,7 @@
 // Script does not change the content.
 // It merely changes the display after the contents are loaded.
 // Need at least one math block present on the page for the script to work properly.
-// Small value for startUpWaitTime and keyUpWaitTime can make the script to load improperly.
+// Small value for startUpWaitTime and keyUpWaitTime can make the script load improperly.
 // Add delimiters as desired though delimiters other than default one have not been tested yet.
 
 // Acknowledgement
