@@ -56,6 +56,9 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - Please submit PR if you have any update to the project or would like to contribute. Thanks in advanced!
 
 ## Reference
+- [notion.so](notion.so)
+- [Notion Official](https://www.notion.so/Notion-Official-83715d7703ee4b8699b5e659a4712dd8)
+- [Notion Community](https://www.notion.so/Notion-Community-04f306fbf59a413fae15f42e2a1ab029)
 - [evertheylen/notion-inline-math](https://github.com/evertheylen/notion-inline-math)
 - [Violentmonkey Metadata Block](https://violentmonkey.github.io/api/metadata-block/)
 - [StackOverFlow Answer to "Run javascript function when user finishes typing instead of on key up?"](https://stackoverflow.com/a/4220182)
