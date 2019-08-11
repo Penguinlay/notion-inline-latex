@@ -2,10 +2,11 @@
 // @name            Notion Inline LaTeX
 // @namespace       https://github.com/Penguinlay/notion-inline-latex
 // @match           https://www.notion.so/*
-// @version         0.1
+// @version         0.2
 // @description     User Script for Inline LaTeX Rendering in notion.so
 // @require         https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js
 // @require         https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js
+// @grant           GM_addStyle
 // ==/UserScript==
 
 // Note:
@@ -18,6 +19,13 @@
 // Acknowledgement
 // This script is inspired by the project by Evert Heylen.
 // https://github.com/evertheylen/notion-inline-math
+
+// right-padding for inline math mode
+GM_addStyle(`
+.notion-frame .katex {
+    padding-right: 0 !important;
+}
+`)
 
 // declare/init vars
 let timer;                              // timer identifier
