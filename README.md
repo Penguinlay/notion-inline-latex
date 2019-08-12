@@ -41,6 +41,9 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - [Unofficial NotionHacks Discord](https://discordapp.com/invite/2RrqtF9), or
 - - [Unofficial NotionHacks Slack](https://notionhacks.slack.com/join/shared_invite/enQtNDk4MTM3NzQ5NjE4LWVjYzg3ODhhYWIzY2I4NTE5ZDJjNmU2OTNlNDFmYzQwZTQ3YzdlMmZiMmZkOTNlYmJhNDUzMmIyZjFmZTEzZTg).
 
+## Example
+[Duplicatable Sample Notion Page](https://www.notion.so/penguinlay/notion-inline-latex-dc4c1e7a0bc146aa91a99a60c3db840a)
+
 ## Known Limitations
 - You need at least one math block present in the page where you want to render inline LaTeX.
 - Render at startup will not work when the page is loaded dynamically within Notion. Quick fix is just click a neutral key like shift for render at keyup to pick up the keyup cue.
