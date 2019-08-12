@@ -4,8 +4,8 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 ---
 
 ## Feature
-- Load at Startup (default two seconds latency for smoother experience but customizable)
-- Load at Keyup (default two seconds latency for smoother experience but customizable)
+- Render LaTeX at Startup (default two seconds latency for smoother experience but customizable)
+- Render LaTeX at Keyup (default two seconds latency for smoother experience but customizable)
 - `$ $` as Default LaTeX Delimiter (customizable)
 
 ## Acknowledgement
@@ -17,7 +17,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - The script should work with other UserScript extentions as it is or with minimum changes though it *has not* been tested yet.
 - Script does not change the content.
 - - It merely changes the display after the contents are loaded.
-- Need at least one math block present before the first block where you want to render inline LaTeX on the page for the script to work properly.
+- For the script to work properly, you need at least one math block present in the page where you want to render inline LaTeX.
 - This script is based on the script by Evert Heylen for my own math notes on [notion.so](notion.so).
 - - I make it available for public so that it would be useful to others.
 - - I meant no harm in writing this personal script.
@@ -36,13 +36,13 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 ## Usage
 - It should work on any [notion.so](notion.so) page automatically through extension as long as 
 - - the script is enabled in extension, and 
-- - there exists at least one math block in the page before the first block where you want to render inline LaTeX.
+- - there exists at least one math block in the page where you want to render inline LaTeX.
 - If you have any usage question, you can ask me on either:
 - - [Unofficial NotionHacks Discord](https://discordapp.com/invite/2RrqtF9), or
 - - [Unofficial NotionHacks Slack](https://notionhacks.slack.com/join/shared_invite/enQtNDk4MTM3NzQ5NjE4LWVjYzg3ODhhYWIzY2I4NTE5ZDJjNmU2OTNlNDFmYzQwZTQ3YzdlMmZiMmZkOTNlYmJhNDUzMmIyZjFmZTEzZTg).
 
 ## Known Limitations
-- For the script to work properly, the page needs at least one math block before the first block where you want to render inline LaTeX.
+- For the script to work properly, you need at least one math block present in the page where you want to render inline LaTeX.
 
 ## To-Do-List
 - [ ] Figure out a way to eliminate the need for the presence of math block for the script to work.
