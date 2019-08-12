@@ -17,7 +17,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - The script should work with other UserScript extentions as it is or with minimum changes though it *has not* been tested yet.
 - Script does not change the content.
 - - It merely changes the display after the contents are loaded.
-- Need at least one math block present on the page for the script to work properly.
+- Need at least one math block present before the first block where you want to render inline LaTeX on the page for the script to work properly.
 - This script is based on the script by Evert Heylen for my own math notes on [notion.so](notion.so).
 - - I make it available for public so that it would be useful to others.
 - - I meant no harm in writing this personal script.
