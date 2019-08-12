@@ -43,7 +43,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ## Known Limitations
 - For the script to work properly, you need at least one math block present in the page where you want to render inline LaTeX.
-- It won't work in callout block.
+- Render at startup will not work when the page is loaded from page navigation. Quick fix is just write something and delete for render at keyup to pick up the cue.
 
 ## To-Do-List
 - [ ] Figure out a way to eliminate the need for the presence of math block for the script to work.
