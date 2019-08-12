@@ -53,7 +53,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ## Contribution
 - Please start an issue if you find a bug or have any question.
-- Please submit PR if you have any update to the project or would like to contribute. Thanks in advanced!
+- Please submit PR if you have any update to the project or would like to contribute. Thanks in advance!
 
 ## Reference
 - [Official notion.so](notion.so)
