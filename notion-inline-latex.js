@@ -2,7 +2,7 @@
 // @name            Notion Inline LaTeX
 // @namespace       https://github.com/Penguinlay/notion-inline-latex
 // @match           https://www.notion.so/*
-// @version         0.4
+// @version         0.5
 // @description     User Script for Inline LaTeX Rendering in notion.so
 // @require         https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js
 // @require         https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js
@@ -43,14 +43,7 @@ function renderInlineLaTeX() {
       { left: "$", right: "$", display: false }
     ]
   });
-  enterEscapeKey();
   console.log("Inline LaTeX is rendered.");
-}
-
-// select block to avoid cursor displacement
-function enterEscapeKey() {
-  var keyEvent = new KeyboardEvent("keypress", { key: "Escape" });
-  document.body.dispatchEvent(keyEvent);
 }
 
 // on startup...
