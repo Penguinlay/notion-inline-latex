@@ -55,6 +55,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 
 ## To-Do-List
 - [ ] Figure out a way to eliminate the need for the presence of math block for the script to work.
+- [ ] Figure out how to avoid cursor shifting to the beginning of the block after each render.
 
 ## Customization
 - Small value for startUpWaitTime and keyUpWaitTime can make the script load improperly.
