@@ -22,7 +22,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - I made it available for public so that it would be useful to others.
 - - I meant no harm in writing this personal script.
 - - I cannot take responsibility for loss of data or other harms.
-- - So, even though the script only changes the display and it is harmless at my best knowledge, please use it at your own risk, especially with untested mobile usage/solution described below.
+- - So, even though the script only changes the display and it is harmless at my best knowledge, please use it at your own risk, especially with untested mobile installation/usage described below.
 - Last but not least, this project/script is in no way affiliated nor sponsored by [notion.so](notion.so).
 - - Like features on [Notion Hacks](https://www.notion.so/Notion-Hacks-27b92f71afcd4ae2ac9a4d14fef0ce47), this is a personal/community hack/workaround.
 
@@ -41,7 +41,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - [Unofficial NotionHacks Discord](https://discordapp.com/invite/2RrqtF9), or
 - - [Unofficial NotionHacks Slack](https://notionhacks.slack.com/join/shared_invite/enQtNDk4MTM3NzQ5NjE4LWVjYzg3ODhhYWIzY2I4NTE5ZDJjNmU2OTNlNDFmYzQwZTQ3YzdlMmZiMmZkOTNlYmJhNDUzMmIyZjFmZTEzZTg).
 
-## Mobile Usage Solution/Idea
+## Mobile Installation/Usage (Untested)
 - Note: The workaround below has never been tested or tried out. Just an idea for those of you adventurous. Use with extreme caution!!!
 - - Install a browser with plugin/extension support which has userscript plugin/extension available (For example, Opera with Tampermonkey).
 - - Use the script with that plugin/extension.
