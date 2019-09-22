@@ -41,7 +41,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
 - - [Unofficial NotionHacks Discord](https://discordapp.com/invite/2RrqtF9), or
 - - [Unofficial NotionHacks Slack](https://notionhacks.slack.com/join/shared_invite/enQtNDk4MTM3NzQ5NjE4LWVjYzg3ODhhYWIzY2I4NTE5ZDJjNmU2OTNlNDFmYzQwZTQ3YzdlMmZiMmZkOTNlYmJhNDUzMmIyZjFmZTEzZTg).
 
-## Mobile Solution Idea
+## Mobile Usage Idea
 - Note: The workaround below has never been tested or tried out. Just an idea for those of you adventurous. Use with extreme caution!!!
 - - Install a browser with plugin/extension support which has userscript plugin/extension available (For example, Opera with Tampermonkey).
 - - Use the script with that plugin/extension.
