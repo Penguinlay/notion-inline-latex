@@ -18,12 +18,12 @@ UserScript for Inline LaTeX Rendering in [notion.so](https://www.notion.so/)
 - Script does not change the content.
 - - It merely changes the display after the contents are loaded.
 - For the script to work properly, you need at least one math block present in the page where you want to render inline LaTeX.
-- This script is based on the script by Evert Heylen for my own math notes on [notion.so](notion.so).
+- This script is based on the script by Evert Heylen for my own math notes on [notion.so](https://www.notion.so/).
 - - I made it available for public so that it would be useful to others.
 - - I meant no harm in writing this personal script.
 - - I cannot take responsibility for loss of data or other harms.
 - - So, even though the script only changes the display and it is harmless at my best knowledge, please use it at your own risk, especially with untested mobile installation/usage described below.
-- Last but not least, this project/script is in no way affiliated nor sponsored by [notion.so](notion.so).
+- Last but not least, this project/script is in no way affiliated nor sponsored by [notion.so](https://www.notion.so/).
 - - Like features on [Notion Hacks](https://www.notion.so/Notion-Hacks-27b92f71afcd4ae2ac9a4d14fef0ce47), this is a personal/community hack/workaround.
 
 ## Installation
@@ -31,10 +31,10 @@ UserScript for Inline LaTeX Rendering in [notion.so](https://www.notion.so/)
 - Click on the extension icon and click plus icon. A new text editor window by extension will be opened in new tab.
 - Copy/paste the script `notion-inline-latex.js`.
 - Save and close the editor.
-- Go to [notion.so](notion.so) and enable the script if it has not been already.
+- Go to [notion.so](https://www.notion.so/) and enable the script if it has not been already.
 
 ## Usage
-- It should work on any [notion.so](notion.so) page automatically through extension as long as 
+- It should work on any [notion.so](https://www.notion.so/) page automatically through extension as long as 
 - - the script is enabled in extension, and 
 - - there exists at least one math block in the page where you want to render inline LaTeX.
 - If you have any usage question, you can ask me on either:
@@ -66,7 +66,7 @@ UserScript for Inline LaTeX Rendering in [notion.so](https://www.notion.so/)
 - Please submit PR if you have any update to the project or would like to contribute. Thanks in advance!
 
 ## Reference
-- [Official notion.so](notion.so)
+- [Official notion.so](https://www.notion.so/)
 - [Official Notion Documentation](https://www.notion.so/Notion-Official-83715d7703ee4b8699b5e659a4712dd8)
 - [Notion Community](https://www.notion.so/Notion-Community-04f306fbf59a413fae15f42e2a1ab029)
 - [Notion Hacks](https://www.notion.so/Notion-Hacks-27b92f71afcd4ae2ac9a4d14fef0ce47)
