@@ -1,5 +1,5 @@
 # notion-inline-latex
-UserScript for Inline LaTeX Rendering in [notion.so](notion.so)
+UserScript for Inline LaTeX Rendering in [notion.so](https://www.notion.so/)
 
 ---
 
