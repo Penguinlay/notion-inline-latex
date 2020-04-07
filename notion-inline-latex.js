@@ -5,7 +5,7 @@
 // @version         0.5
 // @description     User Script for Inline LaTeX Rendering in notion.so
 // @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
-// @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js
+// @require         https://cdn.jsdelivr.net/gh/howyay/js-hosting@f633cdd963413765f5c9f9c6eabcf56dac52ba1a/katex/contrib/auto-render.min.js
 // @grant           GM_addStyle
 // ==/UserScript==
 
@@ -30,6 +30,7 @@ GM_addStyle(`
 // declare/init vars
 let timer; // timer identifier
 let startUpWaitTime = 3000; // ms after startup (adjust as needed)
+let pageChangeWaitTime = 1500; // ms after page changed (adjust as needed)
 let userActionWaitTime = 100; // ms after keyup   (adjust as needed)
 
 // render inline LaTeX
@@ -44,6 +45,25 @@ function renderInlineLaTeX() {
     ]
   });
   console.log("Inline LaTeX is rendered.");
+}
+
+let url = window.location.href;
+
+['click', 'popstate'].forEach(evt =>
+    window.addEventListener(evt, function() {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                renderOnPageChange();
+            }
+            url = location.href;
+        });
+    }, true)
+);
+
+function renderOnPageChange() {
+    console.log("Rendering inline LaTeX on navigation...");
+    clearTimeout(timer);
+    timer = setTimeout(renderInlineLaTeX, pageChangeWaitTime);
 }
 
 function renderOnUserAction(evt) {
