@@ -4,8 +4,8 @@
 // @match           https://www.notion.so/*
 // @version         0.5
 // @description     User Script for Inline LaTeX Rendering in notion.so
-// @require         https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js
-// @require         https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js
+// @require         https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
+// @require         https://cdn.jsdelivr.net/gh/howyay/js-hosting@f633cdd963413765f5c9f9c6eabcf56dac52ba1a/katex/contrib/auto-render.min.js
 // @grant           GM_addStyle
 // ==/UserScript==
 
@@ -30,14 +30,15 @@ GM_addStyle(`
 // declare/init vars
 let timer; // timer identifier
 let startUpWaitTime = 3000; // ms after startup (adjust as needed)
-let keyUpWaitTime = 2000; // ms after keyup   (adjust as needed)
+let pageChangeWaitTime = 1500; // ms after page changed (adjust as needed)
+let userActionWaitTime = 100; // ms after keyup   (adjust as needed)
 
 // render inline LaTeX
 function renderInlineLaTeX() {
   renderMathInElement(document.body, {
     delimiters: [
       // LaTeX delimiters (uncomment/add as needed)
-      // { left: "$$" , right: "$$" , display: true  },
+      { left: "$$" , right: "$$" , display: true  },
       // { left: "\\[", right: "\\]", display: true  },
       // { left: "\\(", right: "\\)", display: false },
       { left: "$", right: "$", display: false }
@@ -46,14 +47,37 @@ function renderInlineLaTeX() {
   console.log("Inline LaTeX is rendered.");
 }
 
+let url = window.location.href;
+
+['click', 'popstate'].forEach(evt =>
+    window.addEventListener(evt, function() {
+        requestAnimationFrame(() => {
+            if (url !== location.href) {
+                renderOnPageChange();
+            }
+            url = location.href;
+        });
+    }, true)
+);
+
+function renderOnPageChange() {
+    console.log("Rendering inline LaTeX on navigation...");
+    clearTimeout(timer);
+    timer = setTimeout(renderInlineLaTeX, pageChangeWaitTime);
+}
+
+function renderOnUserAction(evt) {
+  if (evt.target.isContentEditable) return;
+  console.log("Rendering inline LaTeX on user actions...");
+  clearTimeout(timer);
+  timer = setTimeout(renderInlineLaTeX, userActionWaitTime);
+}
+
 // on startup...
 console.log("Rendering inline LaTeX on startup...");
 clearTimeout(timer);
 timer = setTimeout(renderInlineLaTeX, startUpWaitTime);
 
-// on keyup...
-document.addEventListener("keyup", () => {
-  console.log("Rendering inline LaTeX on keyup...");
-  clearTimeout(timer);
-  timer = setTimeout(renderInlineLaTeX, keyUpWaitTime);
-});
+// on user actions...
+document.addEventListener("keydown", renderOnUserAction);
+document.addEventListener("mousedown", renderOnUserAction);
