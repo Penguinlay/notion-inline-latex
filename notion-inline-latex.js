@@ -49,16 +49,15 @@ function renderInlineLaTeX() {
 
 let url = window.location.href;
 
-['click', 'popstate'].forEach(evt =>
-    window.addEventListener(evt, function() {
-        requestAnimationFrame(() => {
-            if (url !== location.href) {
-                renderOnPageChange();
-            }
-            url = location.href;
-        });
-    }, true)
+['mouseup', 'popstate'].forEach(evt =>
+    window.addEventListener(evt, navigationDetection, true)
 );
+
+function renderOnStartUp() {
+  console.log("Rendering inline LaTeX on startup...");
+  clearTimeout(timer);
+  timer = setTimeout(renderInlineLaTeX, startUpWaitTime);
+}
 
 function renderOnPageChange() {
     console.log("Rendering inline LaTeX on navigation...");
@@ -73,11 +72,19 @@ function renderOnUserAction(evt) {
   timer = setTimeout(renderInlineLaTeX, userActionWaitTime);
 }
 
+function navigationDetection(evt) {
+  requestAnimationFrame(() => {
+    if (url !== location.href) {
+      renderOnPageChange();
+    } else {
+      renderOnUserAction(evt);
+    }
+    url = location.href;
+  });
+}
+
 // on startup...
-console.log("Rendering inline LaTeX on startup...");
-clearTimeout(timer);
-timer = setTimeout(renderInlineLaTeX, startUpWaitTime);
+window.addEventListener("load", renderOnStartUp);
 
 // on user actions...
 document.addEventListener("keydown", renderOnUserAction);
-document.addEventListener("mousedown", renderOnUserAction);
